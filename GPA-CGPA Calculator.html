@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="GPA-CGPA Calculator.css" />
+    <script type="text/javascript" src="GPA-CGPA Calculator.js"></script>
+  </head>
+  <body>
+    <center>
+      <marquee id="head"> GPA/CGPA Calculator </marquee><br /><br /><br />
+      <div id="select">
+        <div id="base">Select Base</div>
+        <br />
+        <button class="select" id="fst" onclick="bas(0)">100</button>
+        <button class="select" id="snd" onclick="bas(1)">Custom</button>
+        <div id="inp1">
+          <br />
+          <div id="data2"></div>
+          <button class="ok" onclick="add2()">OK</button>
+        </div>
+        <br /><br />
+      </div>
+      <div id="tooltip2">
+        <div id="arrow2"></div>
+        <div id="content2"></div>
+      <div>
+        <button class="In" onclick="typing('1')">1</button>
+        <button class="In" onclick="typing('2')">2</button>
+        <button class="In three" onclick="typing('3')">3</button>
+        <button class="In" onclick="typing('4')">4</button>
+        <button class="In" onclick="typing('5')">5</button>
+        <button class="In three" onclick="typing('6')">6</button>
+        <button class="In" onclick="typing('7')">7</button>
+        <button class="In" onclick="typing('8')">8</button>
+        <button class="In three" onclick="typing('9')">9</button>
+        <button class="In twlv grn" onclick="typing('0')">0</button>
+        <button class="In twlv del" onclick="typing('x')">✕</button>
+        <button class="In three twlv clr" onclick="typing('ac')">AC</button>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div id="inp2">
+        <div id="data"></div>
+        <button class="add" onclick="add(); showdata();">+</button>
+      </div>
+      <div id="newline1"><br /><br /></div>
+      <div id="tooltip1">
+        <div id="arrow"></div>
+        <div id="content"></div>
+      </div>
+      <br />
+      <div id="newline3"><br /><br /></div>
+      <div id="btn">
+        <button class="btn1" id="btn1" onclick="butn(0); showdata();">
+          Point Grade
+        </button>
+        <button class="btn2" id="btn2" onclick="butn(1); showdata();">
+          Letter Grade
+        </button>
+      </div>
+      <br />
+      <div id="showdata">
+        <div class="subject fstsub">Subject</div>
+        <div class="mark fstmrk">Mark</div>
+        <div class="gpa fstgpa">GPA</div>
+        <div class="cgpa fstcgpa">CGPA</div>
+        <div>
+          <button class="remove dif fstrmv"></button>
+        </div>
+        <div class="subject lstsub">Total</div>
+        <div class="mark lstmrk">0</div>
+        <div class="gpa lstgpa">0.00</div>
+        <div class="cgpa lstcgpa">0.00</div>
+        <div>
+          <button class="remove copy lstrmv" onclick="copy(0)"></button>
+        </div>
+        <div class="subject lstsub">Average</div>
+        <div class="mark lstmrk">0.00</div>
+        <div class="gpa lstgpa">0.00</div>
+        <div class="cgpa lstcgpa">0.00</div>
+        <div>
+          <button class="remove copy lstrmv" onclick="copy(1)"></button>
+        </div>
+      </div>
+      <div id="copy"></div>
+    </center>
+  </body>
+</html>
